@@ -2,3 +2,45 @@
 @use "./_variables" as *;
 @use "./_mixins" as *;
 @use "./_fonts" as *;
+
+h1 {
+  margin: 0;
+  color: #333;
+  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0;
+  color: #333;
+  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 0;
+  color: #333;
+  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  margin: 0;
+  color: #333;
+  font-family: "Frutiger", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+  color: #333;
+  font-family: "Frutiger", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  margin: 0;
+  color: #333;
+  font-family: "Frutiger", "Arial", sans-serif;
+  font-size: 14px;
+}
