@@ -1,7 +1,6 @@
 import './Hero.scss';
 import heroData from '../../assets/images/hero.png';
-import { MdKeyboardArrowRight } from "react-icons/md";
-import Cta from '../Cta/Cta.jsx'
+import KeyBoardArrow from '../keyboardArrow/KeyboardArrow.jsx'
 
 function Hero(){
     return(
@@ -9,8 +8,8 @@ function Hero(){
         <section className='hero'>
             <div className='hero__subheader'>
                 <ul className='hero__link'>
-                   <li className='hero__text'>Wealth Management Canada <MdKeyboardArrowRight /></li>
-                   <li className='hero__text'>Investment management <MdKeyboardArrowRight /></li>
+                   <li className='hero__text'>Wealth Management Canada <KeyBoardArrow /></li>
+                   <li className='hero__text'>Investment management <KeyBoardArrow /></li>
                    <li className='hero__text'>ScotiaMcLeod&reg;</li>
 
                 </ul>
@@ -37,7 +36,7 @@ function Hero(){
             </div>
            
         </section>
-        <Cta />
+      
         </>
     )
 }
