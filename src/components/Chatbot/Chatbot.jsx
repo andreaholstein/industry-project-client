@@ -51,13 +51,15 @@ const Chatbot = () => {
 
   return (
     <div className="chatbot">
-      <button className="chatbot-cta" onClick={toggleChat}>
-        <span
-          className="chatbot-cta__icon"
-          dangerouslySetInnerHTML={{ __html: icon }}
-        />
-        <span className="chatbot-cta__text">Contact Us</span>
-      </button>
+      {!isChatOpen && (
+        <button className="chatbot-cta" onClick={toggleChat}>
+          <span
+            className="chatbot-cta__icon"
+            dangerouslySetInnerHTML={{ __html: icon }}
+          />
+          <span className="chatbot-cta__text">Contact Us</span>
+        </button>
+      )}
 
       {isChatOpen && (
         <div className="chatbot-window">
