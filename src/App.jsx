@@ -18,17 +18,17 @@ import "./App.scss";
 
 function App() {
   return (
-    
+
     <>
       <Header />
       {/* <BrowserRouter> */}
       {/* <Routes> */}
       {/* <Route path="/" element={<HomePage />} /> */}
+      <Hero />
       <Products />
-      <Hero /> 
       <Carousel2Card />
-      <CultureCards />
       <LearnMore />
+      <CultureCards />
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       <Footer />
