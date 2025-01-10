@@ -9,10 +9,9 @@ import Footer from "./components/Footer/Footer.jsx";
 import CultureCards from "./components/CultureCards/CultureCards.jsx"
 import Hero from './components/Hero/Hero.jsx';
 import LearnMore from './components/LearnMore/LearnMore.jsx'
+import Carousel2Card from './components/Carousel2Card/Carousel2Card.jsx';
 // --------- STYLES ---------
 import './App.scss'
-// import Carousel2Card from './components/Carousel2Card/Carousel2Card.jsx';
-
 
 
 function App() {
@@ -20,12 +19,12 @@ function App() {
   return (
     
     <>
-        <Header />
+      <Header />
       {/* <BrowserRouter> */}
       {/* <Routes> */}
       {/* <Route path="/" element={<HomePage />} /> */}
       <Hero /> 
-      {/* <Carousel2Card /> */}
+      <Carousel2Card />
       <CultureCards />
       <LearnMore />
       {/* </Routes> */}
