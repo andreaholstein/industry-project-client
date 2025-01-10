@@ -19,9 +19,6 @@ function LearnMore(){
                 <img  className='learnMore__right'src={rightData} alt="" />
             </div>
            
-            {/* <div className='learnMore__coin'>
-                <img className='learnMore__image'src={coinData} alt="image" />
-            </div> */}
         </div>
     )
 }

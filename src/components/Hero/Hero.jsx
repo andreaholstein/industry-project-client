@@ -29,7 +29,7 @@ function Hero(){
                 <li className='hero__item'>Investment products</li>
                 <li className='hero__item'>Wealth management</li>
                 <li className='hero__item'>Investment advice</li>
-                <li className='hero__item'>Portfolio management</li>
+                <li className='hero__item'>Wealth Portfolio</li>
             </ul>
                
             </div>

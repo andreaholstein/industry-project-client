@@ -12,8 +12,10 @@ import Hero from './components/Hero/Hero.jsx';
 import LearnMore from './components/LearnMore/LearnMore.jsx'
 import Carousel2Card from './components/Carousel2Card/Carousel2Card.jsx';
 import Chatbot from './components/Chatbot/Chatbot.jsx';
+import Contact from './components/Contact/Contact.jsx';
 // --------- STYLES ---------
-import "./App.scss";
+import './App.scss'
+
 
 
 function App() {
@@ -26,8 +28,9 @@ function App() {
       {/* <Route path="/" element={<HomePage />} /> */}
       <Hero />
       <Products />
-      <Carousel2Card />
       <LearnMore />
+      <Carousel2Card />
+      <Contact />
       <CultureCards />
       {/* </Routes> */}
       {/* </BrowserRouter> */}

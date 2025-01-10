@@ -16,7 +16,7 @@
     &__link{
         display: flex;
         flex-direction: row;
-        padding-left: 4.813rem; /// 77px
+        padding-left: 4.813rem; 
         padding-top: 1.5rem;
     }
     &__text{
@@ -65,7 +65,7 @@
     }
     &__title{
         font-size: 2.875rem;
-        color: #fff;
+        color: $primary-white;
     }
     &__list{
         width: 100%;
@@ -81,7 +81,7 @@
         transform: translateX(100%); 
         animation: fadeSlideInOut 12s forwards;
         font-size: 0.8rem;
-        color: #ffff;
+        color: $primary-white;
     }
 }
 .hero__item:nth-child(1){
@@ -111,6 +111,6 @@
     }
     100% {
         opacity: 0;
-        transform: translateX(-100%); /* Optional slight slide out */
+        transform: translateX(-100%); 
     }
 }
