@@ -1,7 +1,7 @@
 import "./Chatbot.scss";
 import ScotiabankIcon from "../../assets/icons/scotiabank.svg";
 import SendIcon from "../../assets/icons/message.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 const Chatbot = () => {
@@ -10,6 +10,8 @@ const Chatbot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
+
+  const bottomRef = useRef(null);
 
   useEffect(() => {
     // Fetch Scotiabank Icon
@@ -25,6 +27,12 @@ const Chatbot = () => {
       .then((data) => setSendIcon(data))
       .catch((error) => console.error("Unable to fetch Send ICON:", error));
   }, []);
+
+  useEffect(() => {
+    if (bottomRef.current) {
+      bottomRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
 
   const toggleChat = () => {
     setIsChatOpen(!isChatOpen);
@@ -71,7 +79,7 @@ const Chatbot = () => {
           </section>
           <section className="chatbot-window__body">
             {messages.map((msg, index) => (
-              <div key={index} className="chatbot-window__message-group">
+              <div key={index} className="chatbot-window__messages">
 
                 <div
                   className={`chatbot-window__label ${
@@ -90,6 +98,7 @@ const Chatbot = () => {
                 </div>
               </div>
             ))}
+            <div ref={bottomRef} />
           </section>
           <section className="chatbot-window__footer">
             <input
@@ -101,7 +110,7 @@ const Chatbot = () => {
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
             />
             <button
-              className="chatbot__send-btn"
+              className="chatbot-window__send"
               onClick={sendMessage}
               dangerouslySetInnerHTML={{ __html: sendIcon }}
             />
