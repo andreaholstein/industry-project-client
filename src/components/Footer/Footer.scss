@@ -38,12 +38,24 @@
     font-family: "Frutiger", "Arial", sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    border-bottom: 2px dotted $text;
+    // text-decoration: underline;
+    // text-decoration-style: dotted;
   }
 
   &__segment-icon {
     padding: 1rem 0;
+  }
+
+  &__legal {
+    width: 60%;
+    padding: 1rem 8rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__legal-item {
+    margin-right: 1rem;
   }
 
   &__end {
@@ -52,5 +64,6 @@
     background-color: $secondary-gray;
     display: flex;
     justify-content: flex-end;
+    font-size: 0.75rem;
   }
 }
