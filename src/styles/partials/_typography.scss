@@ -6,41 +6,70 @@
 h1 {
   margin: 0;
   color: #333;
-  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-family: "Scotiabank", "Frutiger Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 36px;
 }
 
 h2 {
   margin: 0;
   color: #333;
-  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-family: "Scotiabank", "Frutiger Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 24px;
 }
 
 h3 {
   margin: 0;
   color: #333;
-  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-family: "Scotiabank", "Frutiger Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 20px;
 }
 
 h4 {
   margin: 0;
   color: #333;
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-family: "Scotiabank", "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
 }
 
 p {
   margin: 0;
   color: #333;
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-family: "Scotiabank", "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 
 a {
   margin: 0;
   color: #333;
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-family: "Scotiabank", "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+span {
+  margin: 0;
+  color: #333;
+  font-family: "Scotiabank", "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
 }
