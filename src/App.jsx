@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // --------- COMPONENTS ---------
 // import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import CultureCards from "./components/CultureCards/CultureCards.jsx"
 // --------- STYLES ---------
 import './App.scss'
 
@@ -17,9 +18,11 @@ function App() {
       {/* <BrowserRouter> */}
       {/* <Routes> */}
       {/* <Route path="/" element={<HomePage />} /> */}
+      <CultureCards />
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       <Footer />
+
     </>
   )
 }
