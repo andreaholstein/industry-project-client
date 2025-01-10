@@ -14,12 +14,12 @@ const Chatbot = () => {
   }, []);
 
   return (
-    <button className="chatbot__cta" >
+    <button className="chatbot-cta" >
       <span
-        className="chatbot__cta-icon"
+        className="chatbot-cta__icon"
         dangerouslySetInnerHTML={{ __html: icon }}
       />
-      <span className="chatbot__cta-text">Contact Us</span>
+      <span className="chatbot-cta__text">Contact Us</span>
     </button>
   )
 }
