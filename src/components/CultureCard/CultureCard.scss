@@ -17,7 +17,8 @@
 
   &__red-line {
     width: 2.5rem;
-    border-top: 0.25rem solid $prmary-red;
+    padding-bottom: 0.5rem;
+    border-top: 0.3rem solid $prmary-red;
   }
 
   &__title {
@@ -28,5 +29,6 @@
 
   &__text {
     margin: 0;
+    padding-top: 0.75rem;
   }
 }
