@@ -1,0 +1,61 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/_mixins" as *;
+@use "../../styles/partials/_fonts" as *;
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $text;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-radius: 8px;
+    padding-bottom: 3rem;
+
+    &__content {
+        flex: 1;
+        text-align: center;
+    }
+
+    &__title {
+        color: $primary-white;
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: $primary-white;
+        color: $text;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5rem;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $primary-red;
+            color: $primary-white;
+        }
+    }
+
+    &__image-container {
+        flex: 1;
+        max-width: 445px;
+        height: 255px;
+        border: 2px solid $primary-red;
+        position: relative;
+        left: -2rem;
+        border-radius: 0.5rem;
+    }
+
+    &__image {
+        position: relative;
+        width: 100%;
+        border-radius: 0.5rem;
+        left: 1rem;
+        top: 1rem;
+    }
+}
