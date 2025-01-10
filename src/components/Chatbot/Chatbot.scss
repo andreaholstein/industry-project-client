@@ -6,5 +6,25 @@
 .chatbot-cta {
     position: fixed;
     bottom: 50%;
-    right: 20px;
+    right: 0.375rem;
+    display: flex;
+    align-items: center;
+    background-color: $prmary-red;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+    }
+
+    &__text {
+        color: $primary-white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
