@@ -28,9 +28,9 @@ function App() {
       {/* <Route path="/" element={<HomePage />} /> */}
       <Hero />
       <Products />
+      <LearnMore />
       <Carousel2Card />
       <Contact />
-      <LearnMore />
       <CultureCards />
       {/* </Routes> */}
       {/* </BrowserRouter> */}

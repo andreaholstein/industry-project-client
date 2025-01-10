@@ -6,16 +6,15 @@ const Contact = () => {
     <>
       <section className="contact">
         <div className="contact__content">
-          <h2 className="contact__title">
+          <h1 className="contact__title">
             Speak with a Scotia Wealth Management professional Today
-          </h2>
+          </h1>
           <a href="https://www.scotiawealthmanagement.com/ca/en/connect-with-us.html" className="contact__button">
             Connect with Us
           </a>
         </div>
         <div className="contact__image-container">
-          <img src={ContactImage} alt="Scotia Wealth Management professional" className="contact-section__image"
-          />
+          <img src={ContactImage} alt="Scotia Wealth Management professional" className="contact__image"/>
         </div>
       </section>
     </>
