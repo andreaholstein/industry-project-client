@@ -10,6 +10,7 @@ import CultureCards from "./components/CultureCards/CultureCards.jsx"
 import Hero from './components/Hero/Hero.jsx';
 import LearnMore from './components/LearnMore/LearnMore.jsx'
 import Carousel2Card from './components/Carousel2Card/Carousel2Card.jsx';
+import Chatbot from './components/Chatbot/Chatbot.jsx';
 // --------- STYLES ---------
 import './App.scss'
 
@@ -30,9 +31,7 @@ function App() {
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       <Footer />
-      
-     
-
+      <Chatbot />
     </>
   )
 }
