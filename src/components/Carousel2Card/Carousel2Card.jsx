@@ -1,37 +1,59 @@
-import { useEffect, useState } from 'react';
-import Carousel2Card from '../Carousel2Card'
+import { useState, useEffect } from "react";
+import "./Carousel2Card.scss";
+import Carousel2 from "../../data/Carousel2.json";
 
+export default function Carousel2Card() {
 
-function Carousel2Card() {
+    const [toggleState, setToggleState] = useState(1);
+    const [content, setContent] = useState(Carousel2[0]);
 
-    const [activeId, setActiveId] = useState("Carousel1");
-    const [content, setContent] = useState('');
+    const toggleTab = (index) => {
+        setToggleState(index);
+        setContent(Carousel2[index - 1]);
+    };
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get(`https://localhost:517/api/carousel/${activeId}`);
-                setContent(response.data.body);
-            } catch (error) {
-                console.error("Error fetching conetnt", error);
-                setContent("Error loading content. Please try again.");
-            }
-        };
-    fetchData();
-}, [activeId]);
+        setContent(Carousel2[toggleState - 1]); 
+    }, [toggleState]);
 
-    const tabMenu = [
-        { id: "personalized", label: "Personalized"},
-        { id: "moderated", label: "Moderated"},
-        { id: "managed", label: "Managed"},
-    ]
 
     return (
-        <div className='Carousel2Card'>
-            <h2 className="Carousel2Card__title">Choose your preferred level of portfolio participation</h2>
-            
+    <section className="products">
+        <h2 className="products__title">Choose your preferred level of portfolio participation</h2>
+        <ul className="products__tab-container">
+            <li
+                className={
+                toggleState === 1 ? "products__tab active-tab" : "products__tab"
+                }
+                onClick={() => toggleTab(1)}
+            >
+                Personalized
+            </li>
+            <li
+                className={
+                toggleState === 2 ? "products__tab active-tab" : "products__tab"
+                }
+                onClick={() => toggleTab(2)}
+            >
+                Moderated
+            </li>
+            <li
+                className={
+                    toggleState === 3 ? "products__tab active-tab" : "products__tab"
+                }
+                onClick={() => toggleTab(3)}
+                >
+                Managed
+            </li>
+        </ul>
+        <div className="products__content">
+            <h1 className="products__content--title">{content.title}</h1>
+            <div className="products__content--paragraph">
+                {content.body.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                ))}
+            </div>
         </div>
-    );
+    </section>
+);
 }
-
-export default Carousel2Card;
