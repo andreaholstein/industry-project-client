@@ -1,5 +1,70 @@
 // BRAND FONT
 // RADIO CANADA
+
+// Scotiabank-Regular
+@font-face {
+  font-family: "Scotiabank";
+  src: url("src/assets/fonts/Scotia_W_Rg.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Scotiabank-Bold
+@font-face {
+  font-family: "Scotiabank";
+  src: url("src/assets/fonts/Scotia_W_Bd.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Scotiabank-Light
+@font-face {
+  font-family: "Scotiabank";
+  src: url("src/assets/fonts/Scotia_W_Lt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Scotiabank-Regular-It
+@font-face {
+  font-family: "Scotiabank";
+  src: url("src/assets/fonts/Scotia_W_It.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Scotiabank-Bold-It
+@font-face {
+  font-family: "Scotiabank";
+  src: url("src/assets/fonts/Scotia_W_BdIt.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+// Scotiabank-Light-It
+@font-face {
+  font-family: "Scotiabank";
+  src: url("src/assets/fonts/Scotia_W_LtIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+// Scotiabank-Headline
+@font-face {
+  font-family: "Scotiabank-Headline";
+  src: url("src/assets/fonts/Scotia_W_Headline.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Scotiabank-Legal
+@font-face {
+  font-family: "Scotiabank-Legal";
+  src: url("src/assets/fonts/Scotia_W_Legal.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 // REGULAR
 @font-face {
   font-family: "Frutiger";
