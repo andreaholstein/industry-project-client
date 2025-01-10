@@ -3,44 +3,61 @@
 @use "./_mixins" as *;
 @use "./_fonts" as *;
 
-h1 {
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  font-family: "Scotiabank", "Frutiger Bold", "Arial", sans-serif;
+
+}
+
+h1 {
   color: #333;
-  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 36px;
 }
 
 h2 {
-  margin: 0;
   color: #333;
-  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 24px;
 }
 
 h3 {
-  margin: 0;
   color: #333;
-  font-family: "Frutiger Bold", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 20px;
 }
 
 h4 {
-  margin: 0;
   color: #333;
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
 }
 
 p {
-  margin: 0;
   color: #333;
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 
 a {
-  margin: 0;
   color: #333;
-  font-family: "Frutiger", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+span {
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
 }
