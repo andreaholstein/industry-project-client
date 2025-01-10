@@ -1,0 +1,77 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/variables' as *;
+
+.learnMore{
+    width: 80%;
+    height: 9.375rem;
+    background-color: $primary-white;
+    box-shadow: rgba(0, 34, 91, 0.11) 0px 2px 10px 0px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 2.313rem 2.313rem  2.313rem 2.313rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+  
+    &__title{
+        font-size: 1.313rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+    }
+    &__wrap{
+        width: 80px;
+        position: absolute;
+        top: 10px;
+    }
+    &__left{
+        width: 100%;
+        animation: slideInFromLeftTop 1.5s ease-out forwards;
+    }
+    @keyframes slideInFromLeftTop {
+        0% {
+          transform: translate(-100%, -100%); 
+          opacity: 0; 
+        }
+        100% {
+          transform: translate(0, 0); 
+          opacity: 1;
+        }
+      }
+      &__box{
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__span{
+        color: $supporting-blue;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    &__wrap--ryt{
+        width: 80px;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+
+    }
+    &__right{
+        width: 100%;
+        animation: slideInFromRightBottom 1.5s ease-out forwards;
+        
+        
+    }
+    @keyframes slideInFromRightBottom {
+        0% {
+          transform: translate(100%, 100%); 
+          opacity: 0; 
+        }
+        100% {
+          transform: translate(0, 0); 
+          opacity: 1; 
+        }
+      }
+}
