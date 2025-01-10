@@ -7,8 +7,8 @@ export default function Footer() {
         <section className="footer">
             <ul className="footer__segments">
                 <li className="footer__segment-block">
-                    <svg className="footer__segment-icon" version="1.1" id="HOUSE" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="20px" height="20px" viewBox="0 0 1800 1800" enable-background="new 0 0 1800 1800" xml:space="preserve">
+                    <svg className="footer__segment-icon" version="1.1" id="HOUSE" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                        width="20px" height="20px" viewBox="0 0 1800 1800" enableBackground="new 0 0 1800 1800" xmlSpace="preserve">
                         <g>
                             <path fill="#333333" d="M1783.877,760.195L1448.221,519.4c0.936-5.06,1.49-10.252,1.49-15.58V88.032
 		                    c0-47.163-38.371-85.533-85.533-85.533h-124.246c-47.162,0-85.533,38.37-85.533,85.533v220.587L918.581,139.452
@@ -35,8 +35,8 @@ export default function Footer() {
                     <a href="https://www.scotiawealthmanagement.com/ca/en/connect-with-us.html" className="footer__segment-link">Connect with us</a>
                 </li>
                 <li className="footer__segment-block">
-                    <svg className="footer__segment-icon" stroke="currentColor" fill="none" stroke-width="1" viewBox="0 0 24 24" stroke-linecap="round"
-                        stroke-linejoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="footer__segment-icon" stroke="currentColor" fill="none" strokeWidth="1" viewBox="0 0 24 24" strokeLinecap="round"
+                        strokeLinejoin="round" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18 20a6 6 0 0 0-12 0"></path>
                         <circle cx="12" cy="10" r="4"></circle>
                         <circle cx="12" cy="12" r="10"></circle>
