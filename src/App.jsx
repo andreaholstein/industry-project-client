@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import HomePage from './Pages/HomePage/HomePage.jsx';
 // --------- COMPONENTS ---------
 // import Header from "./components/Header/Header.jsx";
-// import Footer from "./components/Footer/Footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 // --------- STYLES ---------
 import './App.scss'
 
@@ -14,12 +14,12 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <BrowserRouter>
-        <Routes>
-          {/* <Route path="/" element={<HomePage />} /> */}
-        </Routes>
-      </BrowserRouter>
-      {/* <Footer /> */}
+      {/* <BrowserRouter> */}
+      {/* <Routes> */}
+      {/* <Route path="/" element={<HomePage />} /> */}
+      {/* </Routes> */}
+      {/* </BrowserRouter> */}
+      <Footer />
     </>
   )
 }
