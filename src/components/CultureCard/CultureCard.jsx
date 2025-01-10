@@ -5,8 +5,9 @@ export default function CultureCard({ blurb }) {
 
     return (
         <div className="card">
-            <h3 className="card-title">{blurb.title}</h3>
-            <p className="card-text">{blurb.text}</p>
+            <div className="card__red-line"></div>
+            <h3 className="card__title">{blurb.title}</h3>
+            <p className="card__text">{blurb.text}</p>
         </div>
     );
 }

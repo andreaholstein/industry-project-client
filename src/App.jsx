@@ -15,12 +15,12 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <BrowserRouter>
-        <Routes>
-          {/* <Route path="/" element={<HomePage />} /> */}
-          <CultureCards />
-        </Routes>
-      </BrowserRouter>
+      {/* <BrowserRouter> */}
+      {/* <Routes> */}
+      {/* <Route path="/" element={<HomePage />} /> */}
+      <CultureCards />
+      {/* </Routes> */}
+      {/* </BrowserRouter> */}
       {/* <Footer /> */}
     </>
   )

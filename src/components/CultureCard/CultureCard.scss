@@ -2,3 +2,25 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/_mixins" as *;
 @use "../../styles/partials/_fonts" as *;
+
+.card {
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  box-sizing: border-box;
+  width: 45%;
+  height: max-content;
+  background-color: inherit;
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 10px -2px lightgray;
+
+  &__red-line {
+    margin-top: 1rem;
+    width: 1.75rem;
+    border-top: 0.25rem solid red;
+    // border-top: 0.25rem solid $primary-red;
+  }
+
+  &__title {
+    padding: 0.25rem;
+  }
+}

@@ -2,3 +2,37 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/_mixins" as *;
 @use "../../styles/partials/_fonts" as *;
+
+.culture {
+  margin: 0;
+  padding: 2rem 8rem;
+  background-color: inherit;
+  border-bottom: 0.0625rem solid gray;
+  //   border-bottom: 0.0625rem solid $secondary-gray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+
+  &__cards {
+    // box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  &__logos {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__legal {
+    font-size: 0.5rem;
+    padding: 1rem 0;
+  }
+}
