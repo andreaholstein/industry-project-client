@@ -51,9 +51,9 @@ function Header() {
                 <div className="header__container--main">
                     <div className="header__container--logo">
                         <a href="https://www.scotiawealthmanagement.com/ca/en.html" className="header__link">               
-                            <img class="header__logo--tablet" src="https://www.scotiawealthmanagement.com/content/dam/scotiafunds/image/logos/ScotiaWM_logo_E_twoline_R_HEX_Jun_2022.png" alt="Scotia Wealth Management" data-img-id="header" />
+                            <img className="header__logo--tablet" src="https://www.scotiawealthmanagement.com/content/dam/scotiafunds/image/logos/ScotiaWM_logo_E_twoline_R_HEX_Jun_2022.png" alt="Scotia Wealth Management" data-img-id="header" />
                         
-                            <img class="header__logo--mobile" src="https://www.scotiawealthmanagement.com/content/dam/scotiabank/images/logos/2019/scotiabank-logo-red-mobile.svg" alt="Scotia Wealth Management" data-img-id="header" />
+                            <img className="header__logo--mobile" src="https://www.scotiawealthmanagement.com/content/dam/scotiabank/images/logos/2019/scotiabank-logo-red-mobile.svg" alt="Scotia Wealth Management" data-img-id="header" />
                         </a>
                     </div>
 
