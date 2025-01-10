@@ -17,21 +17,21 @@ import './App.scss'
 function App() {
 
   return (
-    
+
     <>
       <Header />
       {/* <BrowserRouter> */}
       {/* <Routes> */}
       {/* <Route path="/" element={<HomePage />} /> */}
-      <Hero /> 
+      <Hero />
       <Carousel2Card />
-      <CultureCards />
       <LearnMore />
+      <CultureCards />
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       <Footer />
-      
-     
+
+
 
     </>
   )
