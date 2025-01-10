@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import CultureCards from "./components/CultureCards/CultureCards.jsx"
+import Chatbot from './components/Chatbot/Chatbot.jsx';
 // --------- STYLES ---------
 import './App.scss'
 
@@ -22,6 +23,7 @@ function App() {
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       <Footer />
+      <Chatbot />
 
     </>
   )
