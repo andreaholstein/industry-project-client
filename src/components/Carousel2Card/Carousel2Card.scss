@@ -1,0 +1,14 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/_mixins" as *;
+@use "../../styles/partials/_fonts" as *;
+
+.Carousel2Card{
+
+&__title {
+    padding: 1rem 0;
+    font-weight: 500;
+    font-size: 2.5rem;
+    } 
+
+}
